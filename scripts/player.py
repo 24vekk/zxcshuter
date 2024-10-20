@@ -12,4 +12,6 @@ class Player(Sprite):
             self.rect.y -= 8
         if keys[pygame.K_s] or keys[pygame.K_DOWN]:
             self.rect.y += 8
-        
+    def __init__(self, x, y, image, speed, health):
+        super().__init__(x, y, image, speed)
+        self.health = health
