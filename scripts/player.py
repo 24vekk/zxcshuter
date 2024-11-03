@@ -15,3 +15,5 @@ class Player(Sprite):
     def __init__(self, x, y, image, speed, health):
         super().__init__(x, y, image, speed)
         self.health = health
+    def get_damage(self):
+        self.health -= 1
